@@ -1,1 +1,3 @@
-export default req => $fetch(`https://api.coinlore.net${req.url}`)
+export default defineEventHandler((event) => {
+  return $fetch(`https://api.coinlore.net${event.node.req.url}`)
+})
