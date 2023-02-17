@@ -1,5 +1,5 @@
 <script setup>
-const { data } = await useFetch('/api/tickers?limit=10')
+const { data } = await useFetch('/api/tickers/?limit=10')
 </script>
 
 <template>
